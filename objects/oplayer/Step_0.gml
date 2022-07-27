@@ -9,7 +9,9 @@ keyJump = keyboard_check(vk_space);
 var _move = keyRight - keyLeft;
 
 hsp	= _move*walkSp;
-
+xsize = image_xscale;
+if (hsp < 0) image_xscale = -xsize;
+else image_xscale = xsize;
 vsp = vsp+grv;
 
 if (place_meeting(x,y+1,oWall)) && (keyJump)
@@ -61,3 +63,7 @@ else
 
 if (hsp != 0) image_xscale = sign(hsp);
 */
+
+
+camera_set_view_pos(view_camera[0],x-camera_get_view_width(view_camera[0])/2,
+y - 0)
