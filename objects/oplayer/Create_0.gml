@@ -6,4 +6,3 @@ vsp = 0;
 grv = 0.3;
 walkSp = 4;
 jumpSp = 9;
-xSize = image_xscale;

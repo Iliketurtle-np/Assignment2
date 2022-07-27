@@ -9,9 +9,15 @@ keyJump = keyboard_check(vk_space);
 var _move = keyRight - keyLeft;
 
 hsp	= _move*walkSp;
-xsize = image_xscale;
-if (hsp < 0) image_xscale = -xsize;
-else image_xscale = xsize;
+if (hsp < 0)
+{
+	image_xscale = -0.2;
+	currentdirection = -0.2;
+}
+else if (hsp > 0)
+{
+	image_xscale = .2;
+}
 vsp = vsp+grv;
 
 if (place_meeting(x,y+1,oWall)) && (keyJump)
