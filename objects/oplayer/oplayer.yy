@@ -1,5 +1,5 @@
 {
-  "name": "Obj_Player",
+  "name": "oPlayer",
   "spriteId": {
     "name": "sPlayer",
     "path": "sprites/sPlayer/sPlayer.yy",
