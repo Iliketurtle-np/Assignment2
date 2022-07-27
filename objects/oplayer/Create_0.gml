@@ -1,8 +1,18 @@
 /// @description
 // You can write your code in this editor
-
-hsp = 0;
-vsp = 0;
-grv = 0.3;
-walkSp = 2.5;
-jumpSp = 7;
+if(room == Rm_Game)
+{
+	hsp = 0;
+	vsp = 0;
+	grv = 0.3;
+	walkSp = 2.5;
+	jumpSp = 7;
+}
+else if( room == House4)
+{
+	hsp = 0;
+	vsp = 0;
+	grv = 0.3;
+	walkSp = 2.5;
+	jumpSp = 100;
+}

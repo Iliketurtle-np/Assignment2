@@ -10,22 +10,29 @@ var _move = keyRight - keyLeft;
 
 hsp	= _move*walkSp;
 //cannot go outside of game
-if(x < 0)
-{
-	x = 5;
-}	
-else if(x > 1022)
-{
-	x = 1020;
+if(room == Rm_Game)
+{ 
+	if (hsp < 0)
+	{
+		image_xscale = -0.2;
+		currentdirection = -0.2;
+	}
+	else if (hsp > 0)
+	{
+		image_xscale = .2;
+	}
 }
-if (hsp < 0)
+else if(room == House4)
 {
-	image_xscale = -0.2;
-	currentdirection = -0.2;
-}
-else if (hsp > 0)
-{
-	image_xscale = .2;
+	if (hsp < 0)
+		{
+			image_xscale = -0.5;
+			currentdirection = -0.5;
+		}
+		else if (hsp > 0)
+		{
+			image_xscale = 0.5;
+		}
 }
 vsp = vsp+grv;
 
