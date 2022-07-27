@@ -1,10 +1,10 @@
 {
   "spriteId": {
-    "name": "Sprite6",
-    "path": "sprites/Sprite6/Sprite6.yy",
+    "name": "Slope",
+    "path": "sprites/Slope/Slope.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -29,7 +29,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Clouds",
+  "name": "SlopeObject",
   "tags": [],
   "resourceType": "GMObject",
 }

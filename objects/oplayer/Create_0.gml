@@ -7,6 +7,7 @@ if(room == Rm_Game)
 	grv = 0.3;
 	walkSp = 2.5;
 	jumpSp = 7;
+	object_get_visible(Clouds)
 }
 else if( room == House4)
 {

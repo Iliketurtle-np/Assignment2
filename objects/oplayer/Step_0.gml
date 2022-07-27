@@ -1,17 +1,14 @@
 /// @description Core Player Logic
-
 //Get player inputs
 keyLeft = keyboard_check(vk_left);
 keyRight = keyboard_check(vk_right);
 keyJump = keyboard_check(vk_space);
 keyUp = keyboard_check(vk_up);
-//Calculate Movement
-var _move = keyRight - keyLeft;
-
-hsp	= _move*walkSp;
-//cannot go outside of game
+keydown = keyboard_check(vk_down);
 if(room == Rm_Game)
 { 
+	inHouse4 = false;
+	inRm_Game = true;
 	if (hsp < 0)
 	{
 		image_xscale = -0.2;
@@ -21,9 +18,12 @@ if(room == Rm_Game)
 	{
 		image_xscale = .2;
 	}
+
 }
-else if(room == House4)
+else if (room == House4)
 {
+	inRm_Game = false;
+	inHouse4 = true;
 	if (hsp < 0)
 		{
 			image_xscale = -0.5;
@@ -34,12 +34,49 @@ else if(room == House4)
 			image_xscale = 0.5;
 		}
 }
-vsp = vsp+grv;
 
+
+
+
+//door4 activation
+if (place_meeting(x,y,Door4)&& keyUp && room == Rm_Game && inRm_Game == true)
+{
+	room_goto(House4)
+}
+else if(place_meeting(x,y,Door4) && keydown && room == House4 && inHouse4 ==true)
+{
+    room_goto(Rm_Game)
+} 
+
+//Calculate Movement
+var _move = keyRight - keyLeft;
+
+hsp	= _move*walkSp;
+//if Game room is Rm_Game image_xscale changes to 0.2
+
+vsp = vsp+grv;
+//Jump Action
 if (place_meeting(x,y+1,oWall)) && (keyJump)
 {
 	vsp = -jumpSp
 }
+//Slope collision
+/*if(place_meeting(x+hsp,y+vsp,SlopeObject))
+{
+	while (!place_meeting(x+sign(hsp),y,SlopeObject) && !place_meeting(x,y+sign(vsp),SlopeObject))
+	{
+		x = x+sign(hsp);
+		y=y+sign(vsp);
+	}
+	hsp = 0;
+	vsp =0;
+}
+*/
+
+
+
+
+
 
 //Horizontal collision
 if (place_meeting(x+hsp,y,oWall))
@@ -51,11 +88,7 @@ if (place_meeting(x+hsp,y,oWall))
 	hsp=0;
 }
 x = x+hsp;
-//door4 collison
-/*if (place_meeting(x,y,Door4)&& keyUp)
-{
-	room_goto()
-}*/
+
 //Horizontal collision
 if (place_meeting(x,y+vsp,oWall))
 {
