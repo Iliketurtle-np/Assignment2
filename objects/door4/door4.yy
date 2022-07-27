@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sInvisibleWall",
-    "path": "sprites/sInvisibleWall/sInvisibleWall.yy",
+    "name": "Door",
+    "path": "sprites/Door/Door.yy",
   },
   "solid": false,
   "visible": false,
@@ -29,7 +29,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oWall",
+  "name": "Door4",
   "tags": [],
   "resourceType": "GMObject",
 }
