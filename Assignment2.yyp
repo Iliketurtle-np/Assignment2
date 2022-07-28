@@ -34,8 +34,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"House4","path":"rooms/House4/House4.yy",},},
     {"roomId":{"name":"Rm_Game","path":"rooms/Rm_Game/Rm_Game.yy",},},
+    {"roomId":{"name":"House4","path":"rooms/House4/House4.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
