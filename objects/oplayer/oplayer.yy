@@ -9,8 +9,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "oLight",
-    "path": "objects/oLight/oLight.yy",
+    "name": "OLightParent",
+    "path": "objects/OLightParent/OLightParent.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
