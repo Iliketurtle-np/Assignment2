@@ -22,16 +22,16 @@ else if (room == House4)
     created = 1;
     inRm_Game = false;
     inHouse4 = true;
-    image_yscale =.4013;
+    image_yscale =.2832;
     if (hsp < 0)
         {
-            image_xscale = -1;
-            currentdirection = -1;
+            image_xscale = -.46;
+            currentdirection = -.46;
         }
         else if (hsp > 0)
         {
-            image_xscale = 1;
-        }
+            image_xscale = .46;
+		}
 }
 keyLeft = keyboard_check(vk_left);
 keyRight = keyboard_check(vk_right);
@@ -50,10 +50,42 @@ if (place_meeting(x,y+1,oWall)) && (keyJump)
 {
     vsp = -jumpSp
 }
-
-
-
-
+if(room == House4 && place_meeting(x+hsp,y,oWall))
+{
+	touchingground =true;
+}
+else
+{
+	touchingground=false;
+}
+//Slope collision
+if(place_meeting(x+hsp,y,SlopeObject)&& touchingground == false)
+{
+	yplus = 0;
+	while (place_meeting(x+hsp,y-yplus,SlopeObject) && yplus<=abs(1*hsp))yplus +=1;
+	{
+		if(place_meeting(x+hsp,y-yplus,SlopeObject))
+		{
+			while(!place_meeting(x+sign(hsp),y,SlopeObject))x+=sign(hsp);
+			
+		}
+		if !place_meeting(x,y,SlopeObject) && vsp >= 0 && place_meeting(x,y+2+abs(hsp),SlopeObject)
+		{while(!place_meeting(x,y+1,SlopeObject)) {y += 1;}}
+		else
+		{
+			y-=yplus;
+		}	
+	} 
+}
+//Vertical collision
+if (place_meeting(x,y+vsp,SlopeObject))
+{
+    while (!place_meeting(x,y+sign(vsp),SlopeObject))
+    {
+        y = y+sign(vsp);
+    }
+    vsp=0;
+}
 
 //Horizontal collision
 if (place_meeting(x+hsp,y,oWall))
@@ -116,7 +148,6 @@ if (place_meeting(x,y,Door4)&& keyUp && room == Rm_Game && inRm_Game == true)
 if(place_meeting(x,y,Door4) && keyUp && room == House4 && inHouse4 ==true)
 
 {
-	
 	room_goto(Rm_Game)
 	game_load("state1.dat");
 	global.exitHouse4 = true;

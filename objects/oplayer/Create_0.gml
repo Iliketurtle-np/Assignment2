@@ -9,7 +9,7 @@ if(room == Rm_Game)
 	hsp = 0;
 	vsp = 0;
 	grv = 0.3;
-	walkSp = 2.5;
+	walkSp = 1.5;
 	jumpSp = 7;
 	object_get_visible(Clouds)
 }
@@ -20,6 +20,6 @@ else if(room == House4)
 	vsp = 0;
 	grv = 0.3;
 	walkSp = 2.5;
-	jumpSp = 100;
+	jumpSp = 10;
 }
 
