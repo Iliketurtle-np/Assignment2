@@ -38,6 +38,22 @@ keyRight = keyboard_check(vk_right);
 keyJump = keyboard_check(vk_space);
 keyUp = keyboard_check(vk_up);
 keydown = keyboard_check(vk_down);
+cameraflash = keyboard_check(ord("C"));
+//camera flash and sound
+
+
+	if(takepic)
+{
+	if (cameraflash)
+	{
+		takepic = false;
+		audio_play_sound(CameraTakingPic,1,0);
+		
+		OLighting.visible =false; 
+		alarm[0] = 5;
+	}
+}
+
 //Calculate Movement
 var _move = keyRight - keyLeft;
 
