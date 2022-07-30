@@ -3,7 +3,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
 if !surface_exists(surf)
     {
     var _cw = camera_get_view_width(view_camera[0]);
