@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":6,},
+    {"id":{"name":"Sprite24","path":"sprites/Sprite24/Sprite24.yy",},"order":10,},
     {"id":{"name":"lighting_post_composite","path":"scripts/lighting_post_composite/lighting_post_composite.yy",},"order":3,},
     {"id":{"name":"outline_start","path":"scripts/outline_start/outline_start.yy",},"order":3,},
     {"id":{"name":"outline_end","path":"scripts/outline_end/outline_end.yy",},"order":1,},
