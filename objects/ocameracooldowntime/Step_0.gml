@@ -15,4 +15,4 @@ else
 	Time=5
 	cooldown = true;
 }
-//if Game room is Rm_Game image_xscale changes to 0.2y = cy +ydifference;
+//if Game room is Rm_Game im age_xscale changes to 0.2y = cy +ydifference;
