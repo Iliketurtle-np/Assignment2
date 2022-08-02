@@ -8,6 +8,7 @@
     {"id":{"name":"lighting_update_camera","path":"scripts/lighting_update_camera/lighting_update_camera.yy",},"order":3,},
     {"id":{"name":"outline_init","path":"scripts/outline_init/outline_init.yy",},"order":2,},
     {"id":{"name":"shadow_casters_exist","path":"scripts/shadow_casters_exist/shadow_casters_exist.yy",},"order":8,},
+    {"id":{"name":"oCameraCooldownTime","path":"objects/oCameraCooldownTime/oCameraCooldownTime.yy",},"order":9,},
     {"id":{"name":"shadow_map_ensure_exists","path":"scripts/shadow_map_ensure_exists/shadow_map_ensure_exists.yy",},"order":9,},
     {"id":{"name":"sPlayerWalk","path":"sprites/sPlayerWalk/sPlayerWalk.yy",},"order":7,},
     {"id":{"name":"light_create_area","path":"scripts/light_create_area/light_create_area.yy",},"order":6,},
