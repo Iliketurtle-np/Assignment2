@@ -22,7 +22,7 @@ else if (room == House4)
     created = 1;
     inRm_Game = false;
     inHouse4 = true;
-    image_yscale =.2832;
+    image_yscale =.483;
     if (hsp < 0)
         {
             image_xscale = -.46;
