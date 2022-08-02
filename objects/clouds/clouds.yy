@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite6",
-    "path": "sprites/Sprite6/Sprite6.yy",
+    "name": "sCloud",
+    "path": "sprites/sCloud/sCloud.yy",
   },
   "solid": false,
   "visible": true,
