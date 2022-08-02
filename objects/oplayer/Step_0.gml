@@ -74,34 +74,7 @@ else
 {
 	touchingground=false;
 }
-//Slope collision
-if(place_meeting(x+hsp,y,SlopeObject)&& touchingground == false)
-{
-	yplus = 0;
-	while (place_meeting(x+hsp,y-yplus,SlopeObject) && yplus<=abs(1*hsp))yplus +=1;
-	{
-		if(place_meeting(x+hsp,y-yplus,SlopeObject))
-		{
-			while(!place_meeting(x+sign(hsp),y,SlopeObject))x+=sign(hsp);
-			
-		}
-		if !place_meeting(x,y,SlopeObject) && vsp >= 0 && place_meeting(x,y+2+abs(hsp),SlopeObject)
-		{while(!place_meeting(x,y+1,SlopeObject)) {y += 1;}}
-		else
-		{
-			y-=yplus;
-		}	
-	} 
-}
-//Vertical collision
-if (place_meeting(x,y+vsp,SlopeObject))
-{
-    while (!place_meeting(x,y+sign(vsp),SlopeObject))
-    {
-        y = y+sign(vsp);
-    }
-    vsp=0;
-}
+
 
 //Horizontal collision
 if (place_meeting(x+hsp,y,oWall))
