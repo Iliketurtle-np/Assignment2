@@ -33,7 +33,7 @@
     {"id":{"name":"light_create_directional","path":"scripts/light_create_directional/light_create_directional.yy",},"order":7,},
     {"id":{"name":"light_remove_from_world","path":"scripts/light_remove_from_world/light_remove_from_world.yy",},"order":12,},
     {"id":{"name":"Sprite3","path":"sprites/Sprite3/Sprite3.yy",},"order":16,},
-    {"id":{"name":"SlopeObject","path":"objects/SlopeObject/SlopeObject.yy",},"order":4,},
+    {"id":{"name":"oBox","path":"objects/oBox/oBox.yy",},"order":4,},
     {"id":{"name":"light_create_line","path":"scripts/light_create_line/light_create_line.yy",},"order":8,},
     {"id":{"name":"ext_light_attenuation_apply","path":"scripts/ext_light_attenuation_apply/ext_light_attenuation_apply.yy",},"order":0,},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},"order":1,},
