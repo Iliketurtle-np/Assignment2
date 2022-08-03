@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "SCrate",
-    "path": "sprites/SCrate/SCrate.yy",
+    "name": "Shadow",
+    "path": "sprites/Shadow/Shadow.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,15 +20,8 @@
   "physicsFriction": 0.2,
   "physicsStartAwake": true,
   "physicsKinematic": false,
-  "physicsShapePoints": [
-    {"x":0.0,"y":0.0,},
-    {"x":128.0,"y":0.0,},
-    {"x":128.0,"y":128.0,},
-    {"x":0.0,"y":128.0,},
-  ],
+  "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
@@ -38,7 +31,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oBox",
+  "name": "oShadow",
   "tags": [],
   "resourceType": "GMObject",
 }
