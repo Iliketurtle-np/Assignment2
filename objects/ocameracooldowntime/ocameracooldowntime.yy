@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite24",
-    "path": "sprites/Sprite24/Sprite24.yy",
+    "name": "sCameraSprite",
+    "path": "sprites/sCameraSprite/sCameraSprite.yy",
   },
   "solid": false,
   "visible": true,

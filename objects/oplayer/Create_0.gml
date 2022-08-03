@@ -19,8 +19,8 @@ else if(room == House4)
 	global.exitHouse4 = true;
 	hsp = 0;
 	vsp = 0;
-	grv = 0.7;
-	walkSp = 2;
+	grv = 0.8;
+	walkSp = 2.5;
 	jumpSp = 15;
 }
 
