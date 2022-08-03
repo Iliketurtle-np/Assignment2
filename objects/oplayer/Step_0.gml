@@ -177,3 +177,7 @@ if(place_meeting(x,y,Door4) && keyUp && room == House4 && inHouse4 ==true)
 	global.exitHouse4 = true;
     io_clear()  
 }
+if (keydown)
+{
+	global.Conditionmeet = true;
+}

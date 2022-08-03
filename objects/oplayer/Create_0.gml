@@ -23,4 +23,5 @@ else if(room == House4)
 	walkSp = 2.5;
 	jumpSp = 15;
 }
+global.Conditionmeet = false;
 
