@@ -23,5 +23,13 @@ else if(room == House4)
 	walkSp = 2.5;
 	jumpSp = 15;
 }
-global.Conditionmeet = false;
-
+if(room == TestRoom)
+{
+	hsp = 0;
+	vsp = 0;
+	grv = 0.5;
+	walkSp = 1.5;
+	jumpSp = 7;
+	global.Conditionmeet = false;
+	global.returnfromhouse4 = false;
+}

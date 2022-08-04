@@ -45,6 +45,7 @@
     {"id":{"name":"composite_shadow_map","path":"scripts/composite_shadow_map/composite_shadow_map.yy",},"order":4,},
     {"id":{"name":"Rm_gameSound","path":"sounds/Rm_gameSound/Rm_gameSound.yy",},"order":0,},
     {"id":{"name":"Rm_Game","path":"rooms/Rm_Game/Rm_Game.yy",},"order":0,},
+    {"id":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},"order":2,},
     {"id":{"name":"spr_light_area","path":"sprites/spr_light_area/spr_light_area.yy",},"order":2,},
     {"id":{"name":"outline_start_surface","path":"scripts/outline_start_surface/outline_start_surface.yy",},"order":4,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":0,},
@@ -67,6 +68,7 @@
     {"id":{"name":"light_add_to_world","path":"scripts/light_add_to_world/light_add_to_world.yy",},"order":4,},
     {"id":{"name":"light_create_spot","path":"scripts/light_create_spot/light_create_spot.yy",},"order":10,},
     {"id":{"name":"light_ignore_shadow_caster","path":"scripts/light_ignore_shadow_caster/light_ignore_shadow_caster.yy",},"order":4,},
+    {"id":{"name":"Script51","path":"scripts/Script51/Script51.yy",},"order":3,},
     {"id":{"name":"lighting_get_active_camera","path":"scripts/lighting_get_active_camera/lighting_get_active_camera.yy",},"order":2,},
     {"id":{"name":"sForest","path":"sprites/sForest/sForest.yy",},"order":12,},
     {"id":{"name":"draw_shadow_map","path":"scripts/draw_shadow_map/draw_shadow_map.yy",},"order":5,},
@@ -114,6 +116,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"TestRoom","path":"rooms/TestRoom/TestRoom.yy",},},
     {"roomId":{"name":"Rm_Game","path":"rooms/Rm_Game/Rm_Game.yy",},},
     {"roomId":{"name":"House4","path":"rooms/House4/House4.yy",},},
   ],

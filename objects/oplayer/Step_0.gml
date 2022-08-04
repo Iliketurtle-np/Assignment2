@@ -173,11 +173,20 @@ if(place_meeting(x,y,Door4) && keyUp && room == House4 && inHouse4 ==true)
 
 {
 	room_goto(Rm_Game)
+	global.returnfromhouse4 = true;
 	game_load("state1.dat");
 	global.exitHouse4 = true;
     io_clear()  
 }
+if(place_meeting(x,y,Door4) && keyUp && room == TestRoom)
+{
+	room_goto(Rm_Game)
+}
 if (keydown)
 {
 	global.Conditionmeet = true;
+}
+if (global.Conditionmeet == true && global.returnfromhouse4 == true)
+{
+	oShadow.visible = false;
 }
