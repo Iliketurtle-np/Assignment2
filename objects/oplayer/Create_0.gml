@@ -12,7 +12,7 @@ if(room == Rm_Game)
 	walkSp = 1.5;
 	jumpSp = 7;
 	object_get_visible(Clouds)
-	audio_play_sound(Rm_gameSound,1,true);
+	//audio_play_sound(Rm_gameSound,1,true);
 }
 else if(room == House4)
 {
@@ -32,4 +32,15 @@ if(room == TestRoom)
 	jumpSp = 7;
 	global.Conditionmeet = false;
 	global.returnfromhouse4 = false;
+}
+if(instance_exists(OSmoke))
+{
+	
+	audio_listener_orientation(0,1,0,0,0,1);
+	audio_falloff_set_model(audio_falloff_exponent_distance);
+	audio_play_sound_at(Fire,OSmoke.x,OSmoke.y,0,10,5,1,true,1);
+}
+else
+{
+	audio_pause_sound(Fire);
 }
