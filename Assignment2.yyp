@@ -68,6 +68,7 @@
     {"id":{"name":"Door","path":"sprites/Door/Door.yy",},"order":0,},
     {"id":{"name":"light_create_extension","path":"scripts/light_create_extension/light_create_extension.yy",},"order":2,},
     {"id":{"name":"light_add_to_world","path":"scripts/light_add_to_world/light_add_to_world.yy",},"order":4,},
+    {"id":{"name":"ShadowDisappear","path":"sounds/ShadowDisappear/ShadowDisappear.yy",},"order":4,},
     {"id":{"name":"light_create_spot","path":"scripts/light_create_spot/light_create_spot.yy",},"order":10,},
     {"id":{"name":"light_ignore_shadow_caster","path":"scripts/light_ignore_shadow_caster/light_ignore_shadow_caster.yy",},"order":4,},
     {"id":{"name":"Script51","path":"scripts/Script51/Script51.yy",},"order":3,},

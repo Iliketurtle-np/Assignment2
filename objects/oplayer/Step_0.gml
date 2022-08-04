@@ -189,5 +189,7 @@ if (keydown)
 if (global.Conditionmeet == true && global.returnfromhouse4 == true)
 {
 	oShadow.visible = false;
+	
+	
 }
 audio_listener_position(x,y,0);
