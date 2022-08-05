@@ -1,0 +1,9 @@
+{
+  "extensionId": {
+    "name": "Simple_Menu",
+    "path": "extensions/Simple_Menu/Simple_Menu.yy"
+  },
+  "resourceVersion": "1.0",
+  "resourceType": "GMExtensionConfigSet",
+  "configurables": null
+}
