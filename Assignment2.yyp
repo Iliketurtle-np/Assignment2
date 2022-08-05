@@ -8,6 +8,7 @@
     {"id":{"name":"Clouds","path":"objects/Clouds/Clouds.yy",},"order":3,},
     {"id":{"name":"lighting_update_camera","path":"scripts/lighting_update_camera/lighting_update_camera.yy",},"order":3,},
     {"id":{"name":"outline_init","path":"scripts/outline_init/outline_init.yy",},"order":2,},
+    {"id":{"name":"sSparkle","path":"sprites/sSparkle/sSparkle.yy",},"order":18,},
     {"id":{"name":"Room_Menu","path":"rooms/Room_Menu/Room_Menu.yy",},"order":4,},
     {"id":{"name":"Font_Menu","path":"fonts/Font_Menu/Font_Menu.yy",},"order":0,},
     {"id":{"name":"shadow_casters_exist","path":"scripts/shadow_casters_exist/shadow_casters_exist.yy",},"order":8,},
