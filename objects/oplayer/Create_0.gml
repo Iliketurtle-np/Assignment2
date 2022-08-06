@@ -22,9 +22,11 @@ else if(room == House4)
 	grv = 0.8;
 	walkSp = 2.5;
 	jumpSp = 15;
+
 }
 if(room == TestRoom)
 {
+	
 	hsp = 0;
 	vsp = 0;
 	grv = 0.5;
@@ -32,6 +34,8 @@ if(room == TestRoom)
 	jumpSp = 7;
 	global.Conditionmeet = false;
 	global.returnfromhouse4 = false;
+	global.pickupkey = false;
+	global.switch1On = false;
 }
 if(instance_exists(OSmoke))
 {
