@@ -32,10 +32,26 @@ if(room == TestRoom)
 	grv = 0.5;
 	walkSp = 1.5;
 	jumpSp = 7;
+	//initialise all the global conditions 
 	global.Conditionmeet = false;
 	global.returnfromhouse4 = false;
 	global.pickupkey = false;
 	global.switch1On = false;
+	global.switch2On = false;
+	global.switch3On = false;
+	global.switch4On = false;
+	global.switch5On = false;
+	global.HiddenDoor = false;
+}
+if( room == HiddenRoom)
+{
+	takepic = false;
+	hsp = 0;
+	vsp = 0;
+	grv = 0.5;
+	walkSp = 1.5;
+	jumpSp = 7;
+	OLighting.visible = false;
 }
 if(instance_exists(OSmoke))
 {

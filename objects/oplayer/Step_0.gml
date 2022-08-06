@@ -33,6 +33,22 @@ else if (room == House4)
             image_xscale = .46;
 		}
 }
+else if (room == HiddenRoom)
+{
+	
+    created = 1;
+  
+    image_yscale =.128;
+    if (hsp < 0)
+        {
+            image_xscale = -.215;
+            currentdirection = -.215;
+        }
+        else if (hsp > 0)
+        {
+            image_xscale = .215;
+		}
+}
 keyLeft = keyboard_check(vk_left);
 keyRight = keyboard_check(vk_right);
 keyJump = keyboard_check(vk_space);
