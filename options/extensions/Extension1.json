@@ -1,0 +1,9 @@
+{
+  "extensionId": {
+    "name": "Extension1",
+    "path": "extensions/Extension1/Extension1.yy"
+  },
+  "resourceVersion": "1.0",
+  "resourceType": "GMExtensionConfigSet",
+  "configurables": null
+}
