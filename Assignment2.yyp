@@ -123,6 +123,7 @@
     {"id":{"name":"Contributors","path":"notes/Contributors/Contributors.yy",},"order":0,},
     {"id":{"name":"light_draw_shadow_map","path":"scripts/light_draw_shadow_map/light_draw_shadow_map.yy",},"order":1,},
     {"id":{"name":"compatibility_report_050822_162108218","path":"notes/compatibility_report_050822_162108218/compatibility_report_050822_162108218.yy",},"order":2,},
+    {"id":{"name":"sRoom2","path":"sprites/sRoom2/sRoom2.yy",},"order":27,},
     {"id":{"name":"obj_lighting_init","path":"objects/obj_lighting_init/obj_lighting_init.yy",},"order":2,},
     {"id":{"name":"Switch4","path":"objects/Switch4/Switch4.yy",},"order":3,},
     {"id":{"name":"spr_light_renderer","path":"sprites/spr_light_renderer/spr_light_renderer.yy",},"order":6,},
