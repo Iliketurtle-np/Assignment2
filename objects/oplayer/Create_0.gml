@@ -4,6 +4,7 @@ created = 0;
 WasinHouse4 = false;
 takepic = true;
 global.exitHouse4 = false;
+
 if(room == Rm_Game)
 {
 	hsp = 0;
@@ -24,6 +25,45 @@ else if(room == House4)
 	jumpSp = 15;
 
 }
+else if(room == House1)
+{
+	global.cameradisabled = true;
+	global.exitHouse1 = true;
+	hsp = 0;
+	vsp = 0;
+	grv = 0.8;
+	walkSp = 2.5;
+	jumpSp = 15;
+
+}
+else if(room == House2)
+{
+	
+	global.exitHouse2 = true;
+	hsp = 0;
+	vsp = 0;
+	grv = 0.8;
+	walkSp = 2.5;
+	jumpSp = 15;
+	if(global.switch3On == false)
+	{
+		global.cameradisabled = true;
+		OLighting.visible = false;
+	}
+}
+else if(room == House3)
+{
+	
+	global.exitHouse3 = true;
+	hsp = 0;
+	vsp = 0;
+	grv = 0.8;
+	walkSp = 2.5;
+	jumpSp = 15;
+
+	global.cameradisabled = true;
+	OLighting.visible = false;
+}
 if(room == TestRoom)
 {
 	
@@ -42,6 +82,8 @@ if(room == TestRoom)
 	global.switch4On = false;
 	global.switch5On = false;
 	global.HiddenDoor = false;
+	global.cameradisabled = false;
+	global.count = 0;
 }
 if( room == HiddenRoom)
 {
@@ -51,7 +93,7 @@ if( room == HiddenRoom)
 	grv = 0.5;
 	walkSp = 1.5;
 	jumpSp = 7;
-	OLighting.visible = false;
+	
 }
 if(instance_exists(OSmoke))
 {

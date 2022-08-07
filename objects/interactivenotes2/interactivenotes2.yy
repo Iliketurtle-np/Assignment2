@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Lever",
-    "path": "sprites/Lever/Lever.yy",
+    "name": "NotesOnWall",
+    "path": "sprites/NotesOnWall/NotesOnWall.yy",
   },
   "solid": false,
   "visible": true,
@@ -22,17 +22,19 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":1,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "NumberOfSwitches",
-    "path": "folders/Objects/NumberOfSwitches.yy",
+    "name": "Notes",
+    "path": "folders/Objects/Notes.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Switch4",
+  "name": "InteractiveNotes2",
   "tags": [],
   "resourceType": "GMObject",
 }

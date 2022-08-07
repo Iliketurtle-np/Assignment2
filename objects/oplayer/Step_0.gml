@@ -33,6 +33,57 @@ else if (room == House4)
             image_xscale = .46;
 		}
 }
+else if (room == House1)
+{
+	
+    created = 1;
+    inRm_Game = false;
+    inHouse1 = true;
+    image_yscale =.350;
+    if (hsp < 0)
+        {
+            image_xscale = -.415;
+            currentdirection = -.415;
+        }
+        else if (hsp > 0)
+        {
+            image_xscale = .415;
+		}
+}
+else if (room == House2)
+{
+	
+    created = 1;
+    inRm_Game = false;
+    inHouse2 = true;
+    image_yscale =.491;
+    if (hsp < 0)
+        {
+            image_xscale = -.61;
+            currentdirection = -.61;
+        }
+        else if (hsp > 0)
+        {
+            image_xscale = .61;
+		}
+}
+else if (room == House3)
+{
+	
+    created = 1;
+    inRm_Game = false;
+    inHouse3 = true;
+    image_yscale =.39;
+    if (hsp < 0)
+        {
+            image_xscale = -.46;
+            currentdirection = -.46;
+        }
+        else if (hsp > 0)
+        {
+            image_xscale = .46;
+		}
+}
 else if (room == HiddenRoom)
 {
 	
@@ -54,10 +105,14 @@ keyRight = keyboard_check(vk_right);
 keyJump = keyboard_check(vk_space);
 keyUp = keyboard_check(vk_up);
 keydown = keyboard_check(vk_down);
-cameraflash = keyboard_check(ord("C"));
+if(global.cameradisabled == false)
+{
+	cameraflash = keyboard_check(ord("C"));
+}
 //camera flash and sound
 
-
+if(global.cameradisabled == false)
+{
 	if(takepic)
 {
 	if (cameraflash)
@@ -69,7 +124,7 @@ cameraflash = keyboard_check(ord("C"));
 		alarm[0] = 5;
 	}
 }
-
+}
 //Calculate Movement
 var _move = keyRight - keyLeft;
 
@@ -194,6 +249,56 @@ if(place_meeting(x,y,Door4) && keyUp && room == House4 && inHouse4 ==true)
 	global.exitHouse4 = true;
     io_clear()  
 }
+//door1 activation
+if (place_meeting(x,y,Door1)&& keyUp && room == Rm_Game && inRm_Game == true)
+{
+	game_save("state2.dat");
+    room_goto(House1)
+    io_clear()  
+}
+
+if(place_meeting(x,y,Door1) && keyUp && room == House1)
+
+{
+	room_goto(Rm_Game)
+	global.cameradisabled = false;
+	game_load("state2.dat");
+    io_clear()  
+}
+//door2 activation
+if (place_meeting(x,y,Door2)&& keyUp && room == Rm_Game && inRm_Game == true)
+{
+	game_save("state3.dat");
+    room_goto(House2)
+    io_clear()  
+}
+
+if(place_meeting(x,y,Door2) && keyUp && room == House2)
+
+{
+	room_goto(Rm_Game)
+	global.cameradisabled = false;
+	game_load("state3.dat");
+    io_clear()  
+}
+//door 3 activation
+//door2 activation
+if (place_meeting(x,y,Door3)&& keyUp && room == Rm_Game && inRm_Game == true)
+{
+	game_save("state4.dat");
+    room_goto(House3)
+    io_clear()  
+}
+
+if(place_meeting(x,y,Door3) && keyUp && room == House3)
+
+{
+	room_goto(Rm_Game)
+	global.cameradisabled = false;
+	game_load("state4.dat");
+    io_clear()  
+}
+
 if(place_meeting(x,y,Door4) && keyUp && room == TestRoom)
 {
 	room_goto(Rm_Game)
@@ -202,10 +307,5 @@ if (keydown)
 {
 	global.Conditionmeet = true;
 }
-if (global.Conditionmeet == true && global.returnfromhouse4 == true)
-{
-	oShadow.visible = false;
-	
-	
-}
+
 audio_listener_position(x,y,0);
