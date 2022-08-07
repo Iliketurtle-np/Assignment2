@@ -14,6 +14,10 @@ if ( keyx && place_meeting(x,y,oPlayer)){
 if( keyx && pause == true)
 {
 	alarm[0] = 2;
+
 }
 
-
+if(instance_exists(oPlayer))
+{
+	oCameraCooldownTime.visible = true;
+}
