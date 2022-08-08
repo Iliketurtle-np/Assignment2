@@ -111,7 +111,7 @@ if(instance_exists(OSmoke) && global.switchcount > 1 && room == Rm_Game && globa
 	audio_listener_orientation(0,1,0,0,0,1);
 	audio_falloff_set_model(audio_falloff_exponent_distance);
 
-	audio_play_sound_at(UnknownFootstep,OSmoke.x,OSmoke.y,0,10,200,1,false,1);
+	audio_play_sound_at(UnknownFootstep,OSmoke.x,OSmoke.y,0,100,500,1,false,1);
 	global.audioplayed = false;
 }
 else
