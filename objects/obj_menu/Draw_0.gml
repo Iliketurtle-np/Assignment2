@@ -19,9 +19,10 @@ for (i=0;i<array_length_1d(menu);i++)
                     room_goto(TestRoom); //menu[0]
                 break;
                 case 1: //Credits 
+					room_goto(Room_Credits); //menu[1]
                 break;
                 case 2: 
-                    game_end(); //menu[4]
+                    game_end(); //menu[2]
                 break;
             }
         }

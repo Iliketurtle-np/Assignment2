@@ -101,6 +101,7 @@
     {"id":{"name":"ShadowDisappear","path":"sounds/ShadowDisappear/ShadowDisappear.yy",},"order":4,},
     {"id":{"name":"light_create_spot","path":"scripts/light_create_spot/light_create_spot.yy",},"order":10,},
     {"id":{"name":"sfont_jasontomlee","path":"sprites/sfont_jasontomlee/sfont_jasontomlee.yy",},"order":17,},
+    {"id":{"name":"Room_Credits","path":"rooms/Room_Credits/Room_Credits.yy",},"order":10,},
     {"id":{"name":"light_ignore_shadow_caster","path":"scripts/light_ignore_shadow_caster/light_ignore_shadow_caster.yy",},"order":4,},
     {"id":{"name":"SDoorLocked","path":"sprites/SDoorLocked/SDoorLocked.yy",},"order":21,},
     {"id":{"name":"item_functions","path":"scripts/item_functions/item_functions.yy",},"order":3,},
@@ -145,6 +146,7 @@
     {"id":{"name":"spr_lut_light_intensity_linear","path":"sprites/spr_lut_light_intensity_linear/spr_lut_light_intensity_linear.yy",},"order":2,},
     {"id":{"name":"House4","path":"rooms/House4/House4.yy",},"order":1,},
     {"id":{"name":"sInvisibleWall","path":"sprites/sInvisibleWall/sInvisibleWall.yy",},"order":7,},
+    {"id":{"name":"obj_Credit","path":"objects/obj_Credit/obj_Credit.yy",},"order":20,},
     {"id":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"order":0,},
     {"id":{"name":"get_next_pot","path":"scripts/get_next_pot/get_next_pot.yy",},"order":1,},
     {"id":{"name":"OSmoke","path":"objects/OSmoke/OSmoke.yy",},"order":9,},
@@ -173,6 +175,7 @@
     {"roomId":{"name":"HiddenRoom","path":"rooms/HiddenRoom/HiddenRoom.yy",},},
     {"roomId":{"name":"House2","path":"rooms/House2/House2.yy",},},
     {"roomId":{"name":"House3","path":"rooms/House3/House3.yy",},},
+    {"roomId":{"name":"Room_Credits","path":"rooms/Room_Credits/Room_Credits.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":0,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
