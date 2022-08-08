@@ -3,6 +3,7 @@
 if(global.pickupkey && place_meeting(x,y,oPlayer)&& OHiddenDoor.visible)
 {
 	sprite_index =SDoorOpen;
+	audio_play_sound(Dooropen,1,false);
 	global.HiddenDoor = true;
 }
 if(global.switch1On && global.switch5On && global.switch2On && global.switch3On && global.switch4On)

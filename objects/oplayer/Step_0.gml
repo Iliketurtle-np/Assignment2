@@ -333,3 +333,7 @@ if (keydown)
 }
 
 audio_listener_position(x,y,0);
+if(place_meeting(x,y,LastDoor) && keyUp)
+{
+	EndingJumpScare.visible = true;
+}
