@@ -1,4 +1,8 @@
 //Get player inputs
+
+ 
+ 
+ 
 if(room == Rm_Game)
 { 
     created = 1;
@@ -125,12 +129,27 @@ if(global.cameradisabled == false)
 	}
 }
 }
+
 //Calculate Movement
 var _move = keyRight - keyLeft;
 
 hsp    = _move*walkSp;
+if (hsp != 0)
+{
+	count +=1;
+}
+else
+{
+	count = 0;
+}
 //if Game room is Rm_Game image_xscale changes to 0.2
-
+if( count > 15 )
+{
+	
+	audio_play_sound(Footstep,1,false);
+	
+	count = 0;
+}
 vsp = vsp+grv;
 //Jump Action
 if (place_meeting(x,y+1,oWall)) && (keyJump)
@@ -157,6 +176,7 @@ if (place_meeting(x+hsp,y,oWall))
     while (!place_meeting(x+sign(hsp),y,oWall))
     {
         x = x+sign(hsp);
+		
     }
     hsp=0;
 }
@@ -207,9 +227,12 @@ y = y+vsp;
 //Animation
 if (!place_meeting(x,y+1,oWall))
 {
+	
     sprite_index= sPlayerWalk;
+	
     image_speed = 0;
     if(hsp>0 or hsp <0) image_index = 1; else image_index = 0;
+		
 }
 else
 {
@@ -221,6 +244,7 @@ else
     else
     {
         sprite_index = sPlayerWalk;
+	
     }
 }
 

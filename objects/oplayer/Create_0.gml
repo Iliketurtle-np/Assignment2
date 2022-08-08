@@ -84,6 +84,9 @@ if(room == TestRoom)
 	global.HiddenDoor = false;
 	global.cameradisabled = false;
 	global.count = 0;
+	global.switchcount = 0;
+	global.audioplayed = true;
+
 }
 if( room == HiddenRoom)
 {
@@ -95,14 +98,15 @@ if( room == HiddenRoom)
 	jumpSp = 7;
 	
 }
-if(instance_exists(OSmoke))
+if(instance_exists(OSmoke) && global.switchcount > 1 && room == Rm_Game && global.audioplayed)
 {
-	
 	audio_listener_orientation(0,1,0,0,0,1);
 	audio_falloff_set_model(audio_falloff_exponent_distance);
-	audio_play_sound_at(Fire,OSmoke.x,OSmoke.y,0,10,5,1,true,1);
+
+	audio_play_sound_at(UnknownFootstep,OSmoke.x,OSmoke.y,0,10,200,1,false,1);
+	global.audioplayed = false;
 }
 else
 {
-	audio_pause_sound(Fire);
+	audio_pause_sound(UnknownFootstep);
 }

@@ -6,6 +6,7 @@ var bg = layer_background_get_id(lay_id)
 if(place_meeting(x,y,oPlayer) && keyboard_check_pressed(ord("X")))
 {
 	global.switch4On = true;
+	global.switchcount +=1;
 	image_xscale = -image_xscale;
 	global.count = 1;
 	layer_background_sprite(bg,sRoom3)
@@ -15,6 +16,7 @@ if(place_meeting(x,y,oPlayer) && keyboard_check_pressed(ord("X")))
 if(global.switch4On && keyboard_check_pressed(ord("X")) && place_meeting(x,y,oPlayer))
 {
 	global.switch4On = false;
+	global.switchcount -=1;
 	image_xscale = abs(image_xscale);
 	io_clear();
 }

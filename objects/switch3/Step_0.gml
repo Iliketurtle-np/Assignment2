@@ -6,13 +6,14 @@ if(place_meeting(x,y,oPlayer) && keyboard_check_pressed(ord("X")))
 	global.switch3On = true;
 	global.cameradisabled = false;
 	OLighting.visible = true;
+	global.switchcount +=1;
 	image_xscale = -image_xscale;
 	io_clear();
 }
 if(global.switch3On && keyboard_check_pressed(ord("X")) && place_meeting(x,y,oPlayer))
 {
 	global.switch3On = false;
-
+	global.switchcount -=1;
 	image_xscale = abs(image_xscale);
 	io_clear();
 }
