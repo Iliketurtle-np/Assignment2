@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":5,},
     {"id":{"name":"sCameraSprite","path":"sprites/sCameraSprite/sCameraSprite.yy",},"order":13,},
+    {"id":{"name":"RoomBGM","path":"sounds/RoomBGM/RoomBGM.yy",},"order":9,},
     {"id":{"name":"OHiddenDoor","path":"objects/OHiddenDoor/OHiddenDoor.yy",},"order":14,},
     {"id":{"name":"lighting_post_composite","path":"scripts/lighting_post_composite/lighting_post_composite.yy",},"order":3,},
     {"id":{"name":"outline_start","path":"scripts/outline_start/outline_start.yy",},"order":3,},

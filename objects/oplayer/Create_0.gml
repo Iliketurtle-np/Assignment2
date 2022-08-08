@@ -13,7 +13,8 @@ if(room == Rm_Game)
 	walkSp = 1.5;
 	jumpSp = 7;
 	object_get_visible(Clouds)
-	//audio_play_sound(Rm_gameSound,1,true);
+	audio_play_sound(Rm_gameSound,1,true);
+	audio_pause_sound(RoomBGM);
 }
 else if(room == House4)
 {
@@ -23,7 +24,8 @@ else if(room == House4)
 	grv = 0.8;
 	walkSp = 2.5;
 	jumpSp = 15;
-
+	audio_play_sound(RoomBGM,1,true);
+	audio_pause_sound(Rm_gameSound);
 }
 else if(room == House1)
 {
@@ -34,7 +36,8 @@ else if(room == House1)
 	grv = 0.8;
 	walkSp = 2.5;
 	jumpSp = 15;
-
+	audio_play_sound(RoomBGM,1,true);
+	audio_pause_sound(Rm_gameSound);
 }
 else if(room == House2)
 {
@@ -50,6 +53,8 @@ else if(room == House2)
 		global.cameradisabled = true;
 		OLighting.visible = false;
 	}
+	audio_play_sound(RoomBGM,1,true);
+	audio_pause_sound(Rm_gameSound);
 }
 else if(room == House3)
 {
@@ -63,6 +68,8 @@ else if(room == House3)
 
 	global.cameradisabled = true;
 	OLighting.visible = false;
+	audio_play_sound(RoomBGM,1,true);
+	audio_pause_sound(Rm_gameSound);
 }
 if(room == TestRoom)
 {
