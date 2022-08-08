@@ -9,8 +9,12 @@ if(place_meeting(x,y,oPlayer) && keyboard_check_pressed(ord("X")))
 	global.switchcount +=1;
 	image_xscale = -image_xscale;
 	global.count = 1;
-	layer_background_sprite(bg,sRoom3)
-	layer_background_speed(bg, 0.6);
+	if(layer_background_get_sprite(bg) == Nongifroom3)
+	{
+		layer_background_sprite(bg,sRoom3)
+		layer_background_speed(bg, 0.6);
+		audio_play_sound(Giggles,1,false);
+	}
 	io_clear();
 }
 if(global.switch4On && keyboard_check_pressed(ord("X")) && place_meeting(x,y,oPlayer))

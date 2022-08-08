@@ -110,3 +110,7 @@ else
 {
 	audio_pause_sound(UnknownFootstep);
 }
+if(!instance_exists(Switch3))
+{
+	audio_pause_sound(PowerOutage);
+}
