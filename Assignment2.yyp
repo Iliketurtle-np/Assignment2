@@ -66,6 +66,7 @@
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},"order":0,},
     {"id":{"name":"point_in_polygon","path":"scripts/point_in_polygon/point_in_polygon.yy",},"order":6,},
     {"id":{"name":"LICENSE","path":"notes/LICENSE/LICENSE.yy",},"order":1,},
+    {"id":{"name":"EndScare","path":"sounds/EndScare/EndScare.yy",},"order":12,},
     {"id":{"name":"Door1","path":"objects/Door1/Door1.yy",},"order":16,},
     {"id":{"name":"sh_shadow_map","path":"shaders/sh_shadow_map/sh_shadow_map.yy",},"order":1,},
     {"id":{"name":"spr_lut_light_intensity_line","path":"sprites/spr_lut_light_intensity_line/spr_lut_light_intensity_line.yy",},"order":1,},

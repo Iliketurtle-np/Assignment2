@@ -7,7 +7,7 @@ if( place_meeting(x,y, oPlayer) && keyboard_check_pressed(ord("Z")) && Okey.visi
 	
 	instance_destroy();
 }
-if (global.switch5On && instance_exists(Okey))
+if (global.switch1On && instance_exists(Okey))
 {
 	Okey.visible = true;
 }
