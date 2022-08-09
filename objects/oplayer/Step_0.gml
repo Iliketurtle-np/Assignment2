@@ -20,6 +20,21 @@ if(room == Rm_Game)
     }
 
 }
+if(room == TestRoom)
+{ 
+    created = 1;
+    image_yscale = 0.322;
+    if (hsp < 0)
+    {
+        image_xscale = -0.41;
+        currentdirection = -0.41;
+    }
+    else if (hsp > 0)
+    {
+        image_xscale = .41;
+    }
+
+}
 else if (room == House4)
 {
 	
