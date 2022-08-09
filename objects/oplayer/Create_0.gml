@@ -94,7 +94,7 @@ if(room == TestRoom)
 	global.switchcount = 0;
 	global.audioplayed = true;
 	global.scream = true;
-
+	global.dummynote = false;
 }
 if( room == HiddenRoom)
 {
