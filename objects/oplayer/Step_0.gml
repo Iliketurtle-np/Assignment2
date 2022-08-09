@@ -175,6 +175,10 @@ if (place_meeting(x,y+1,oBox)) && (keyJump)
 {
     vsp = -jumpSp
 }
+if (place_meeting(x,y+1,Dummybox)) && (keyJump)
+{
+    vsp = -jumpSp
+}
 if(room == House4 && place_meeting(x+hsp,y,oWall))
 {
 	touchingground =true;
