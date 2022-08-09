@@ -4,7 +4,7 @@ created = 0;
 WasinHouse4 = false;
 takepic = true;
 global.exitHouse4 = false;
-
+count = 0;
 if(room == Rm_Game)
 {
 	hsp = 0;
