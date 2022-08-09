@@ -258,6 +258,14 @@ if (place_meeting(x,y+vsp,oWall))
     }
     vsp=0;
 }
+if (place_meeting(x,y+vsp,Dummybox))
+{
+    while (!place_meeting(x,y+sign(vsp),Dummybox))
+    {
+        y = y+sign(vsp);
+    }
+    vsp=0;
+}
 y = y+vsp;
 
 
