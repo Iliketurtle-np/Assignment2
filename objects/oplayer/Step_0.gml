@@ -374,4 +374,6 @@ if(place_meeting(x,y,LastDoor) && keyUp)
 {
 	EndingJumpScare.visible = true;
 	audio_play_sound(EndScare,1,false);
+	alarm[5]= 60;
+
 }
