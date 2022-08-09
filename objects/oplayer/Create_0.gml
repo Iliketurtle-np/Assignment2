@@ -102,8 +102,8 @@ if( room == HiddenRoom)
 	hsp = 0;
 	vsp = 0;
 	grv = 0.5;
-	walkSp = 1.5;
-	jumpSp = 7;
+	walkSp = 1;
+	jumpSp = 6;
 	
 }
 if(instance_exists(OSmoke) && global.switchcount > 1 && room == Rm_Game && global.audioplayed)
