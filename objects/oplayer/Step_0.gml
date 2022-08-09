@@ -158,7 +158,7 @@ else
 	count = 0;
 }
 //if Game room is Rm_Game image_xscale changes to 0.2
-if( count > 15 )
+if( count > 50 && vsp == 0)
 {
 	
 	audio_play_sound(Footstep,1,false);
@@ -207,15 +207,29 @@ if (place_meeting(x+hsp,y,oBox))
 	}
 	hsp=0;
 }
-
+else if(place_meeting(x+hsp,y,Dummybox))
+{
+	while (!place_meeting(x+sign(hsp),y,Dummybox))
+    {
+        x = x+sign(hsp);
+	}
+	hsp=0;
+}
 x = x+hsp;
 if (place_meeting(x+2,y,oBox) && keyRight)
 {
 	oBox.x = oBox.x + 1;
 }
+else if(place_meeting(x+2,y,Dummybox) && keyRight)
+{
+	Dummybox.x = Dummybox.x +1;
+}
 if (place_meeting(x-2,y,oBox) && keyLeft)
 {
 	oBox.x = oBox.x - 1;
+}
+else if(place_meeting(x-2,y,Dummybox) && keyLeft){
+Dummybox.x = Dummybox.x -1;
 }
 
 //vertical box collision
@@ -226,6 +240,14 @@ if (place_meeting(x,y+vsp,oBox))
         y = y+sign(vsp);
     }
     vsp=0;
+}
+if(place_meeting(x,y+vsp,Dummybox))
+{
+	while (!place_meeting(x,y+sign(vsp),Dummybox))
+    {
+        y = y+sign(vsp);
+    }
+    vsp=0
 }
 //Vertical collision
 if (place_meeting(x,y+vsp,oWall))

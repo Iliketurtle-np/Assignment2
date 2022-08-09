@@ -78,7 +78,7 @@ if(room == TestRoom)
 	vsp = 0;
 	grv = 0.5;
 	walkSp = 1.5;
-	jumpSp = 7;
+	jumpSp = 9;
 	//initialise all the global conditions 
 	global.Conditionmeet = false;
 	global.returnfromhouse4 = false;
